@@ -11,7 +11,7 @@
   &__link {
     color: var(--nav-text);
     font-weight: 500;
-    transition: opacity 0.2s ease-in;
+    transition: color 0.2s ease;
   }
   &__link--active {
     color: var(--nav-active);
@@ -53,10 +53,6 @@
 
 .btn,
 Navlink.btn {
-//   display: inline-block;
-
-  // height: 51px;
-  // line-height: 25px;
   min-height: 51px;
   display: flex;
   justify-content: center;
