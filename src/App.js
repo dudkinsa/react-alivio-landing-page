@@ -1,16 +1,32 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Header from './Layout/Header/Header';
-import Main from './Pages/Main';
 import Footer from './Layout/Footer/Footer';
 import './App.scss';
-import Navigation from './Layout/Navigation/Navigation';
+import Home from './Pages/Home/Home';
+import WhyAlivio from './Pages/WhyAlivio/WhyAlivio';
+import Solution from './Pages/Solution/Solution';
+import Community from './Pages/Community/Community';
+import Pricing from './Pages/Pricing/Pricing';
+import Auth from './Pages/Auth/Auth';
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <Header />
-      <Footer />
-    
+      <Router>
+        <Header />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/why-alivio" element= {<WhyAlivio />} />
+          <Route path="/solution" element= {<Solution />} />
+          <Route path="/community" element= {<Community />} />
+          <Route path="/pricing" element= {<Pricing />} />
+          <Route path="/authorization" element= {<Auth />} />
+          
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }

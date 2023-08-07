@@ -1,8 +1,63 @@
-
-
-
-
-@import './Layout/Navigation/navigation.scss';
 @import './Layout/Header/header.scss';
-@import './Layout/Footer/';
+@import './Layout/Footer/footer.scss';
 @import './reset.css';
+@import './fonts/Lato/stylesheet.css';
+@import './fonts/Georgia/stylesheet.css';
+
+:root{
+    /* Colors */
+    --white: #fff;
+    --green: #01996D;
+    --jungle-greem: #245852;
+    --black: #000;
+    --dark-char: #292929;
+    --gray: #484848;
+    --shadow-gray: #424242;
+    --light-gray: #d6d6d6;
+
+    /* Header */
+    --nav-bg: var(--white);
+    --nav-text:var(--dark-char);
+    --login-text:var(--black);
+    --nav-active: var(--green);
+    --nav-hover: var(--green);
+    --border-bottom: var(--light-gray);
+
+    /* Button */
+    --btn-color: var(--green);
+    --btn-text:var(--white);
+    --btn-hover: var(--green);
+
+    --text-color:var(--black);
+}
+
+body,html{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+/* Utility */
+
+.none {
+    display: none !important;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1400px;
+}
+
+.visually-hidden{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+}
