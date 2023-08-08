@@ -14,6 +14,7 @@
     --gray: #484848;
     --shadow-gray: #424242;
     --light-gray: #d6d6d6;
+    --green-light:rgba(1, 153, 109, 0.2);
 
     /* Header */
     --nav-bg: var(--white);
@@ -33,6 +34,11 @@
     /* Home */
     --title-color: var(--green);
     --home-text: var(--gray);
+
+    /* Steps */
+    --step-title:var(--black);
+    --step-text:var(--shadow-gray);
+    --step-number:var(--green-light);
     
     --title-color: var(--green);
 }

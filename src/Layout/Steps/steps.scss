@@ -1,0 +1,64 @@
+.step {
+  max-width: 390px;
+
+  &__title {
+    position: relative;
+    padding-top: 135px;
+    padding-left: 88px;
+    margin-bottom: 55px;
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    color: var(--step-title);
+  }
+  &__title::before {
+    content: attr(data-number);
+    color: var(--step-number);
+    position: absolute;
+    left: 0;
+    top: 0;
+   
+   
+    font-size: 150px;
+  
+    font-weight: 400;
+    line-height: 150%; /* 225px */
+  }
+
+  &__text {
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--step-text);
+  }
+
+  &__img {
+   position: absolute;
+   left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  /* другой способ сделать пропорци картнки */
+  &__img-wrapper{
+    position: relative;
+    background-color:blue;
+    padding-bottom: 126%;
+      /*как расчитать пропорцию?
+     высоту делим ширину. 
+     Пример: 492 / 390 = 1,26 преводим в проценты 126%
+     
+     */ 
+
+  }
+}
+
+.step:nth-child(2){
+    padding-top: 287px;
+}
+.step:nth-child(3){
+    padding-top: 54px;
+}

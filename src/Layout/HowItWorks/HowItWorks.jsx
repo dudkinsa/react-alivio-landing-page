@@ -1,6 +1,8 @@
 import React from 'react';
 import './howItWorks.scss';
 
+import Steps from '../Steps/Steps';
+
 const HowItWorks = () => {
   return (
     <div className="how-it-works">
@@ -22,7 +24,10 @@ const HowItWorks = () => {
             </p>
           </div>
         </div>
-        <div className="how-it-works__steps"></div>
+        <div className="how-it-works__steps">
+          <Steps />
+          
+        </div>
       </div>
     </div>
   );

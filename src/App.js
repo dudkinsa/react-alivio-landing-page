@@ -11,6 +11,7 @@ import Pricing from './Pages/Pricing/Pricing';
 import Auth from './Pages/Auth/Auth';
 import HowItWorks from './Layout/HowItWorks/HowItWorks';
 
+
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
           <Route path="/authorization" element={<Auth />} />
         </Routes>
         <HowItWorks />
+        
         <Footer />
       </Router>
     </div>
