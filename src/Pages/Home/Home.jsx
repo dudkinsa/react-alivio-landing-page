@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Home/home.scss';
-import homeBg from '../../assets/img/home-bg.jpg'
+import homeBg from '../../assets/img/home-bg.jpg';
 
 const Home = () => {
   return (
@@ -16,12 +16,14 @@ const Home = () => {
             </p>
           </div>
           <div className="home__btn">
-            <a className='btn btn-big' href="#!">Find Your Way</a>
+            <a className="btn btn-big" href="#!">
+              Find Your Way
+            </a>
           </div>
         </div>
-      </div>
-      <div className="home__img-big">
-        <img src= {homeBg} alt="Girl" />
+        <div className="home__img-big">
+          <img src={homeBg} alt="Girl" />
+        </div>
       </div>
     </div>
   );
