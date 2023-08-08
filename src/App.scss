@@ -29,6 +29,10 @@
     --btn-hover: var(--green);
 
     --text-color:var(--black);
+
+    /* Home */
+    --title-color: var(--green);
+    --home-text: var(--gray);
 }
 
 body,html{
@@ -36,6 +40,30 @@ body,html{
     font-weight: 400;
     font-size: 20px;
     color: var(--text-color);
+}
+/* Buttons */
+/* Syandard button */
+.btn, a.btn {
+    min-height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: var(--btn-color);
+    padding: 0 50px;
+    color: var(--btn-text);
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: 0.2s ease;
+  }
+  .btn:hover {
+    opacity: 0.8;
+  }
+
+  /* Big buttons */
+  .btn-big a.btn-big{
+    min-height: 65px;
 }
 
 /* Utility */
