@@ -8,7 +8,7 @@
     /* Colors */
     --white: #fff;
     --green: #01996D;
-    --jungle-greem: #245852;
+    --jungle-green: #245852;
     --black: #000;
     --dark-char: #292929;
     --gray: #484848;
@@ -39,8 +39,12 @@
     --step-title:var(--black);
     --step-text:var(--shadow-gray);
     --step-number:var(--green-light);
-    
+    /* title */
     --title-color: var(--green);
+
+    /* Story */
+    --story-background: var(--jungle-green);
+    --story-text:var(--white);
 }
 
 body,html{

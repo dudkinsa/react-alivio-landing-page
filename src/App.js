@@ -9,7 +9,8 @@ import Solution from './Pages/Solution/Solution';
 import Community from './Pages/Community/Community';
 import Pricing from './Pages/Pricing/Pricing';
 import Auth from './Pages/Auth/Auth';
-import HowItWorks from './Layout/HowItWorks/HowItWorks';
+
+
 
 
 function App() {
@@ -24,9 +25,7 @@ function App() {
           <Route path="/community" element={<Community />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/authorization" element={<Auth />} />
-        </Routes>
-        <HowItWorks />
-        
+        </Routes>     
         <Footer />
       </Router>
     </div>

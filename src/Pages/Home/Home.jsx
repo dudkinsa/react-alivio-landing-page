@@ -1,6 +1,8 @@
 import React from 'react';
 import '../Home/home.scss';
 import homeBg from '../../assets/img/home-bg.jpg';
+import HowItWorks from '../../Layout/HowItWorks/HowItWorks';
+import Story from '../../Layout/Story/Story';
 
 const Home = () => {
   return (
@@ -25,6 +27,9 @@ const Home = () => {
           <img src={homeBg} alt="Girl" />
         </div>
       </div>
+      <HowItWorks />
+      <Story />
+
     </div>
   );
 };

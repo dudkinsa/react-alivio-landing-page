@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/img/logo.svg';
+import logo from '../../assets/icons/logo.svg';
 
 const Header = () => {
   const activelLink = 'header-nav__link header-nav__link--active';

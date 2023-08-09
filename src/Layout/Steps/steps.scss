@@ -18,10 +18,9 @@
     position: absolute;
     left: 0;
     top: 0;
-   
-   
+
     font-size: 150px;
-  
+
     font-weight: 400;
     line-height: 150%; /* 225px */
   }
@@ -35,30 +34,30 @@
   }
 
   &__img {
-   position: absolute;
-   left: 0;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
     top: 0;
     width: 100%;
     height: auto;
     object-fit: cover;
   }
   /* другой способ сделать пропорци картнки */
-  &__img-wrapper{
+  &__img-wrapper {
     position: relative;
-    background-color:blue;
+
     padding-bottom: 126%;
-      /*как расчитать пропорцию?
+    /*как расчитать пропорцию?
      высоту делим ширину. 
      Пример: 492 / 390 = 1,26 преводим в проценты 126%
      
-     */ 
-
+     */
   }
 }
 
-.step:nth-child(2){
-    padding-top: 287px;
+.step:nth-child(2) {
+  padding-top: 287px;
 }
-.step:nth-child(3){
-    padding-top: 54px;
+.step:nth-child(3) {
+  padding-top: 54px;
 }
