@@ -6,7 +6,7 @@ import iconVideo from '../../assets/icons/play-white.svg';
 const Story = () => {
   return (
     <div className="story">
-      <div className="container">
+      <div className="container container-wide">
         <div className="story__row">
           <div className="story__content">
             <div className="story__title">
