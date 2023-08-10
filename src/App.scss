@@ -4,6 +4,7 @@
 @import './fonts/Lato/stylesheet.css';
 @import './fonts/Georgia/stylesheet.css';
 
+
 :root{
     /* Colors */
     --white: #fff;
@@ -45,6 +46,16 @@
     /* Story */
     --story-background: var(--jungle-green);
     --story-text:var(--white);
+
+    /* Product */
+
+    --product-title: var(--shadow-gray);
+    --product-subtitle: var(--green);
+    --product-text:var(--gray);
+
+    /* Footer */
+    --footer-bg: var(--jungle-green);
+    --footer-text: var(--white);
 }
 
 body,html{

@@ -32,18 +32,13 @@
     display: flex;
   }
   &__video {
+    border-radius: 18px;
+    overflow: hidden;
     position: relative;
     width: 895px;
   }
 
-  &__video-wrapper {
-   
-  }
 
-  &__video-object {
-    
-  }
-  
 
   &__video-btn {
     position: absolute;

@@ -26,7 +26,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="header-nav__item">
-                <NavLink 
+                <NavLink
                   className={({ isActive }) =>
                     isActive ? activelLink : normalLink
                   }
@@ -69,15 +69,13 @@ const Header = () => {
           </nav>
 
           <div className="header-login">
-            <NavLink className= "header-login__auth" to = "/authorization">
-            Sign in
+            <NavLink className="header-login__auth" to="/authorization">
+              Sign in
             </NavLink>
-            <NavLink className= "btn" to = "/">
-            Start Trial
+            <NavLink className="btn" to="/">
+              Start Trial
             </NavLink>
-
-           
-            </div>
+          </div>
         </div>
       </div>
     </header>
