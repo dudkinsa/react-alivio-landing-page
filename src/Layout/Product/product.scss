@@ -61,7 +61,12 @@
   }
 }
 
-.btn {
-}
-.btn-big {
+// ul, ul li {
+//   list-style: unset;
+// }
+
+.card{
+  &__contents li{
+    list-style: unset;
+  }
 }
