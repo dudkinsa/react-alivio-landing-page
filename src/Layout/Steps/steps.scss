@@ -61,3 +61,17 @@
 .step:nth-child(3) {
   padding-top: 54px;
 }
+
+@media (max-width: 1210px) {
+  .how-it-works{
+    &__steps {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+
+  }
+  .step:nth-child(3), .step:nth-child(2) {
+    padding-top: 0;
+}
+}
