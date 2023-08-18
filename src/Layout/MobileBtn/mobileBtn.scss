@@ -1,0 +1,79 @@
+
+@media (max-width: 1032px) {
+.mobile-nav-button {
+  /* Reset for mobile */
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  /* Nav icon styles */
+  position: relative;
+  z-index: 100;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 5px;
+    background-color: var(--mobile-btn);
+  }
+
+  &__icon::after,
+  &__icon::before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 5px;
+    background-color: var(--mobile-btn);
+    /* трансформация по закрыванию */
+    transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+  }
+
+  &__icon::before {
+    left: 0;
+    top: -10px;
+  }
+
+  &__icon::after {
+    left: 0;
+    top: 10px;
+  }
+
+  &__icon.active {
+    background-color: transparent;
+  }
+
+  &__icon.active::before {
+    transform: rotate(45deg);
+    top: 0;
+    /* Трансформация при открывании */
+    transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+  }
+
+  &__icon.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    /* Трансформация при открывании */
+    transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+  }
+}
+}
+
+
+@media (max-width: 1032px) {
+  .mobile-nav-button{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+  }
+  
+}
+
+
+

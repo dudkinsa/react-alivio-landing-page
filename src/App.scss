@@ -7,6 +7,8 @@
 :root {
   /* Colors */
   --white: #fff;
+ 
+
   --green: #01996d;
   --jungle-green: #245852;
   --black: #000;
@@ -55,6 +57,12 @@
   /* Footer */
   --footer-bg: var(--jungle-green);
   --footer-text: var(--white);
+
+  /* Mobile Buttin */
+  --mobile-btn: var(--green);
+
+  /* Mobile Navigation */
+  --mobile-background: var(--white);
 }
 
 body,
@@ -124,7 +132,19 @@ a.btn {
     html {
         font-size: 18px;
     }
+  
 }
+@media (max-width: 1032px) {
+  
+  
+  .btn, a.btn {
+  
+    min-height: 40px;
+      font-size: 18px;
+    
+}
+}
+
 
 @media (max-width: 1399px) {
   .container {
@@ -135,4 +155,8 @@ a.btn {
     .container-wide {
         max-width: 100%;
     }
+}
+
+.no-scroll{
+  overflow: hidden;
 }

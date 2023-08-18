@@ -2,9 +2,13 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/icons/logo.svg';
 
+
+
 const Header = () => {
   const activelLink = 'header-nav__link header-nav__link--active';
   const normalLink = 'header-nav__link';
+
+  
 
   return (
     <header className="header">
@@ -13,6 +17,7 @@ const Header = () => {
           <NavLink to="/" className="header-logo">
             <img src={logo} alt="logo" />
           </NavLink>
+
           <nav className="header-nav">
             <ul className="header-nav__list">
               <li className="header-nav__item">
@@ -72,12 +77,12 @@ const Header = () => {
             <NavLink className="header-login__auth" to="/authorization">
               Sign in
             </NavLink>
-            <NavLink className="btn" to="/">
+            <NavLink className="btn header-login__btn" to="/">
               Start Trial
             </NavLink>
           </div>
         </div>
-      </div>
+      </div>  
     </header>
   );
 };
